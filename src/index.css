@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face{
+  font-family: 'NeueHaas';
+  src: url('/Font/NeueHaasDisplayBoldItalic.ttf');
+}
+@font-face {
+  font-family: 'Akizdenz';
+  src: url('/Font/FontsFree-Net-Akzidenz-grotesk-bold.ttf');
+}
+@font-face {
+  font-family:'Anton';
+  src: url('/Font/Anton-Regular.ttf');
+}
+@font-face {
+  font-family:'Berthold';
+  src: url('/Font/Berthold\ Akzidenz\ Grotesk\ Bold\ Extended.otf');
+}
+body {
+  scroll-behavior: smooth;
+}

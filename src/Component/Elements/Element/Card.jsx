@@ -180,7 +180,7 @@ const Card = () => {
             {(check || windowWidth < 1060 ) && <Maps detail={Detail} first={first} setFirst={setFirst} />}
 
           </div>
-          <div className="absolute -bottom-20 w-[100%] flex justify-start lg:justify-end left-[2%]">
+          <div className="absolute -bottom-20 w-[100%] flex justify-start lg:justify-end left-[2%] lg:left-0 lg:pr-40">
           <div
           
             className=" h-16 w-16 lg:w-16 lg:h-16 rounded-full bg-yellow shadow-sm hover:shadow-none shadow-black flex justify-center items-center cursor-pointer z-40"

@@ -77,11 +77,11 @@ const About = () => {
                     <img src='https://imageupload.io/ib/eyU6sXcXm4W2yO6_1698473614.webp' className=" w-[600px] absolute -left-32 bottom-0"/>
                     <div className=' w-full h-full flex flex-col   relative justify-center items-center my-12 sm:py-3'>
                    
-                        <div className=' font-Anton text-6xl md:text-8xl bg-yellow top-2 sm:top-5  py-7 px-10 text-center mb-10 absolute'>ABOUT US</div>
+                        <div className=' font-Anton text-5xl md:text-7xl bg-yellow top-2 sm:top-5  py-7 px-10 text-center mb-10 absolute'>ABOUT US</div>
                         <div className='w-5/6 2xl:w-3/6 md:h-[5/6] bg-white p-3 flex flex-col items-center rounded-lg' >
-                            <div className=' font-Anton text-4xl mb-5'><EffectText words="Who We Are"/></div>
-                            <div className=' sm:text-2xl  font-bold mb-2'><EffectText words="We are a passionate group of cybersecurity professionals who share a common vision to make Africa a hub of cybersecurity excellence. Our team brings together a wealth of experience in the cybersecurity field and we are committed to driving positive change in the industry. " speed={0.01}/></div>
-                            <div className=' sm:text-2xl font-bold'><EffectText words="         Join us in this exciting journey! You can become a part of our thriving community by participating in discussions, sharing your expertise, attending events, or even volunteering. Together, we can make a real impact on the African cybersecurity landscape." speed={0.01} delay={3}/></div>
+                            <div className=' font-Anton text-3xl mb-5'><EffectText words="Who We Are"/></div>
+                            <div className=' sm:text-xl  font-bold mb-2'><EffectText words="We are a passionate group of cybersecurity professionals who share a common vision to make Africa a hub of cybersecurity excellence. Our team brings together a wealth of experience in the cybersecurity field and we are committed to driving positive change in the industry. " speed={0.01}/></div>
+                            <div className=' sm:text-xl font-bold'><EffectText words="         Join us in this exciting journey! You can become a part of our thriving community by participating in discussions, sharing your expertise, attending events, or even volunteering. Together, we can make a real impact on the African cybersecurity landscape." speed={0.01} delay={3}/></div>
                      
                     </div>
                     </div>

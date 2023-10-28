@@ -35,13 +35,13 @@ const Navbartwo = () => {
         <section className='md:flex justify-between hidden xl:w-[27%] lg:w-[50%]'>
             <div onClick={()=>{
                 setactive("Home")
-            }} className={`font-extrabold  text-sm ${active === "Home" ? "text-black bg-yellow" : `text-${color}`} hover:shadow-sm cursor-pointer py-2 px-5 rounded-3xl whitespace-nowrap`}>Home</div>
+            }} className={`font-extrabold  text-sm ${active === "Home" ? "text-black bg-yellow" : `text-${color}`} hover:text-metal  cursor-pointer py-2 px-5 rounded-3xl whitespace-nowrap`}>Home</div>
           <Link to="/join"><div onClick={()=>{
                 setactive("Talk")
-            }} className={`font-extrabold  text-sm ${active === "Talk" ? "text-black bg-yellow" : `text-${color}`} hover:shadow-sm cursor-pointer py-2 px-5 rounded-3xl whitespace-nowrap `}>Partner</div></Link>
+            }} className={`font-extrabold  text-sm ${active === "Talk" ? "text-black bg-yellow" : `text-${color}`} hover:text-metal  cursor-pointer py-2 px-5 rounded-3xl whitespace-nowrap `}>Partner</div></Link>
             <Link to="/about"><div onClick={()=>{
                 setactive("History")
-            }} className={`font-extrabold  text-sm ${active === "History" ? "text-black bg-yellow" : `text-${color}`} hover:shadow-sm cursor-pointer py-2 px-5 rounded-3xl whitespace-nowrap`}>About Us</div> </Link>
+            }} className={`font-extrabold  text-sm ${active === "History" ? "text-black bg-yellow" : `text-${color}`} hover:text-metal  cursor-pointer py-2 px-5 rounded-3xl whitespace-nowrap`}>About Us</div> </Link>
             <div className={`font-extrabold text-sm text-${color} italic opacity-30 py-2 px-5 rounded-3xl whitespace-nowrap`}>Collections</div>
         </section>
         <section className='xl:flex justify-between w-[10%] hidden'>

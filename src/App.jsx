@@ -46,7 +46,7 @@ function App() {
             <Email />
           </Context.Provider>
         </div></ParallaxProvider>}/>
-        <Route path="/join" element={<Join/>}/>
+        <Route path="/join" element={<div className=" bg-swarm h-[100vh] w-full"><Join/></div>}/>
         <Route path="/about" element={<ParallaxProvider><About/></ParallaxProvider>}/>
         </Routes>
       </HashRouter>

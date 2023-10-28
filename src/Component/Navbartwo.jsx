@@ -24,14 +24,13 @@ const Navbartwo = () => {
           }
         }
       }
-    console.log(color)
   return (
     <AnimatePresence>
     <motion.div variants={slide} initial="hide" animate="start" exit="hide" className=' fixed w-full flex justify-center h-[70px] items-center z-50 backdrop-blur-lg font-Anton tracking-wide'>
     <div className='flex lg:flex-row md:flex-col md:justify-center xl:justify-between justify-between w-[95%] items-center'>
 
         <section className=' flex xl:flex items-center h-full md:hidden'>
-        <div className=' border-black border-2 rounded-full w-10 h-10 overflow-hidden  bg-yellow'><img src='/Images/Peace.png'  className=' w-full'/></div>
+        <div className=' border-black border-2 rounded-full w-16 h-16 overflow-hidden  bg-yellow'><img src='/Images/Peace.png'  className=' w-full'/></div>
         </section>
         <section className='md:flex justify-between hidden xl:w-[27%] lg:w-[50%]'>
             <div onClick={()=>{
@@ -52,7 +51,7 @@ const Navbartwo = () => {
         <Link to="https://twitter.com/Luzebox">  <FaTwitter  className={`cursor-pointer ${active === "Talk" ? "text-black bg-yellow" : `text-${color}`}  fill-${color} hover:fill-yellow`} /></Link>
         </section>
         <section className=' flex md:hidden'>
-            <div className=' w-14 h-14 flex justify-center items-center bg-yellow rounded-full' onClick={()=>{setmenu(true)}}>
+            <div className=' w-16 h-16 flex justify-center items-center bg-yellow rounded-full' onClick={()=>{setmenu(true)}}>
            <ImMenu className=' '/> 
             </div>
         </section>

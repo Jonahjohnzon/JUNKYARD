@@ -20,7 +20,7 @@ const Fourth = () => {
     <div className=" relative  h-full w-full bg-gradient-to-b from-skyone to-silver flex flex-col items-center" id="tribek">
     <div className="absolute h-5 w-5 top-0 left-0"  ></div>
       <div className="h-[700px] sm:h-[800px]  w-full flex justify-center items-center" >
-        <div className=" absolute top-60" ref={trigger}></div>
+        <div className=" absolute top-60 w-full" ref={trigger}></div>
         <Card />
       </div>
       <Parallax speed={15} className=" w-[98%] h-full bg-whitey py-20 rounded-lg">

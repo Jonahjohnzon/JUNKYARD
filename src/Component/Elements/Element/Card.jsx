@@ -7,7 +7,7 @@ const Maps = ({ detail, first, setFirst }) => {
   const Data = detail.map((data) => {
     const slide = {
       hidden: {
-        x: -1200,
+        x: "-200%",
         opacity: 1,
         transition: {
           duration: 1,
@@ -25,7 +25,7 @@ const Maps = ({ detail, first, setFirst }) => {
     };
     const children = {
       hidden: {
-        x: -1200,
+        x: '-200%',
       },
       show: {
         x: 0,
@@ -33,7 +33,7 @@ const Maps = ({ detail, first, setFirst }) => {
     };
     const slide2 = {
       hidden: {
-        x: 1200,
+        x: '200%',
         opacity: 1,
         transition: {
           duration: 1,
@@ -56,9 +56,10 @@ const Maps = ({ detail, first, setFirst }) => {
       }
     };
 
+
     return (
-      <>
-        <div className="w-full flex justify-end">
+     
+        <div className="w-full flex justify-end"  key={data.key}>
           <AnimatePresence>
             {data.first >= first ? (
               <motion.div
@@ -72,7 +73,6 @@ const Maps = ({ detail, first, setFirst }) => {
                 <div
                   className={`lg:h-full h-[65%] sm:h-[70%] w-[75%] lg:w-[85%]  rounded-lg  bg-white flex justify-center items-center shadow-md `}
                   variants={children}
-                  key={data.key}
                   style={{ transform: `rotate(${data.rotate}deg)` }}
                   onClick={() => {
                     Change();
@@ -145,29 +145,45 @@ const Maps = ({ detail, first, setFirst }) => {
             </AnimatePresence>
           </div>
         </div>
-      </>
+      
     );
   });
   return Data;
 };
 const Card = () => {
   const [first, setFirst] = useState(1);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const New = () => {
     console.log(first);
     if (first > 1) {
       setFirst(first - 1);
     }
   };
+  useEffect(() => {
+    const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleWindowResize);
+
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  });
   const triggerss = useRef();
   const check = useInView(triggerss);
   return (
     <div className=" 3xl:w-[85%]  h-full relative">
       <div className=" w-full h-full flex justify-between items-center">
-        <div className=" w-[100%] h-[85%] items-end lg:items-center relative flex justify-between " ref={triggerss}>
-          <div className=" w-full">
-            {check&&<Maps detail={Detail} first={first} setFirst={setFirst} />}
-            <div
-            className="absolute -bottom-20 left-[2%] lg:right-80 h-16 w-16 lg:w-16 lg:h-16 rounded-full bg-yellow shadow-sm hover:shadow-none shadow-black flex justify-center items-center cursor-pointer z-40"
+        <div className=" w-[100vw] h-[85%] items-end lg:items-center relative flex justify-between " ref={triggerss}>
+        <div className=" w-full">
+            {(check || windowWidth < 1060 ) && <Maps detail={Detail} first={first} setFirst={setFirst} />}
+
+          </div>
+          <div className="absolute -bottom-20 w-[100%] flex justify-start lg:justify-end left-[2%]">
+          <div
+          
+            className=" h-16 w-16 lg:w-16 lg:h-16 rounded-full bg-yellow shadow-sm hover:shadow-none shadow-black flex justify-center items-center cursor-pointer z-40"
             onClick={() => {
               New();
             }}
@@ -175,7 +191,6 @@ const Card = () => {
             <AiOutlineLeft className=" text-3xl " />
           </div>
           </div>
-  
         </div>
       </div>
     </div>

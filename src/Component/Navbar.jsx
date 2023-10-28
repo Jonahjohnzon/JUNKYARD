@@ -23,7 +23,7 @@ const slide ={
     }
   }
 const Navbar = () => {
-  const {setColor} = useContext(Context);
+  const {setColor, setmenu} = useContext(Context);
 
 useEffect(()=>{
 
@@ -59,7 +59,7 @@ useEffect(()=>{
             <Link to="https://twitter.com/Luzebox"><FaTwitter color='white' className=' cursor-pointer hover:fill-yellow'/></Link>
         </section>
         <section className=' flex md:hidden' >
-            <div className=' w-20 h-20 flex justify-center items-center bg-yellow rounded-full'>
+            <div className=' w-16 h-16 flex justify-center items-center bg-yellow rounded-full'  onClick={()=>{setmenu(true)}}>
            <ImMenu className=' '/> 
             </div>
         </section>

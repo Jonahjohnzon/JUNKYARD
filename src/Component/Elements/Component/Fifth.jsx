@@ -29,7 +29,7 @@ const Fifth = () => {
     })
   return (
     <div className=' relative h-full pt-9 overflow-hidden'  id='junkyc'>
-    <div className='  w-[600px] top-0 absolute right-0'><img src='/Images/935c88.webp'/></div>
+    <div className=' w-[300px]  sm:w-[600px] top-0 absolute right-0'><img src='https://imageupload.io/ib/DW71jgEKZ1uMBp9_1698473639.webp'/></div>
         <div className=' absolute w-5 h-5 top-80 left-0' ref={view}></div>
         <div className=' flex flex-col items-center h-full relative'>
         <div className=' h-60  lg:mb-20'>

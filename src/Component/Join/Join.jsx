@@ -44,7 +44,7 @@ const Join = () => {
   return (
     <div>
         <AnimatePresence>{load&&<motion.div className=' fixed h-full z-50 w-full bg-swarm' exit={{y:-1000, transition:{ duration:0.9}}}><Loader/></motion.div>}</AnimatePresence>
-        <div className=' bg-[url("/Images/boxes-background.png")] w-full h-[100vh] relative'>
+        <div className=' bg-swarm bg-[url("https://imageupload.io/ib/7TBIkZ3o9bhy6nD_1698473665.png")] w-full h-[100vh] relative'>
             <div className=' h-full w-full backdrop-blur-lg absolute top-0 z-10'></div>
             <div className=' relative flex flex-col justify-center items-center z-20 h-full'>
                 <div className=' flex p-10 h-1/6 justify-between w-full' >

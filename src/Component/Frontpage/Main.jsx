@@ -20,13 +20,13 @@ const Main = () => {
    <AnimatePresence> {load &&<motion.div className=" w-full h-[100vh] z-50 bg-swarm fixed" exit={{y:'-100%',transition:{duration:0.7}}}><Loader/></motion.div>}</AnimatePresence>
     <div className=" h-full w-full overflow-x-hidden relative" id="junky">
      
-      <div className="  bg-[url('/Images/background.jpg')] bg-no-repeat bg-cover bg-center overflow-hidden">
+      <div className=" h-[100vh]  sm:h-[2300px] relative  bg-[url('/Images/background.jpg')] bg-no-repeat bg-cover bg-center">
       <Cloud />
      <Body />
      <Slidemenu/>
-      <Parallax  className="w-full relative z-30 mt-[-35vh]">
-        <img src="/Images/Zokus.webp" className=" w-full relative" />
-      </Parallax>
+      <div className="w-full absolute bottom-0 z-30">
+        <img src="/Images/Zokus.webp" className=" w-full" />
+      </div>
       </div>
       <Parallax >
       <Frontpart />

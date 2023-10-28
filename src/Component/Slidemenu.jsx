@@ -40,10 +40,10 @@ const Slidemenu = () => {
           initial="hidden"
           animate="animate"
           exit="exit"
-          className=" w-[100vw] h-[100vh] fixed top-0  bg-swarm z-50  text-white"
+          className=" w-[100vw] h-[100vh] fixed top-0  bg-white z-50 text-black font-extrabold text-2xl"
         >
           <div
-            className="bg-dak bg-opacity-60  w-full h-full"
+            className="bg-black bg-opacity-20  w-full h-full"
            
           ></div>
           <motion.div
@@ -85,34 +85,33 @@ const Slidemenu = () => {
               <ul className=" text-gray  mt-[4vh]">
                   <div className=" h-[0.1px] opacity-25 w-full bg-gray mb-[1vh]"></div>
                   <Link to="/" onClick={()=>{setmenu(false)}}>
-                    <li className=" mb-2 flex items-center  font-bold ">
+                    <li className=" mb-2 flex items-center  ">
                       <PiDotsNineFill className=" mr-4" />
                       HOME
                     </li>
                   </Link>
-                  <div className=" h-[0.1px] opacity-25 w-full bg-gray mb-[3vh]"></div>
+                  <div className=" h-[0.1px] opacity-25 w-full bg-black mb-[3vh]"></div>
                   <Link to="/about"  onClick={()=>{setmenu(false)}}>
-                    <li className=" mb-2 flex items-center  font-bold ">
+                    <li className=" mb-2 flex items-center ">
                       <PiDotsNineFill className=" mr-4" />
                       ABOUT US
                     </li>
                   </Link>
-                  <div className=" h-[0.1px] opacity-25 w-full bg-gray mb-[3vh]"></div>
+                  <div className=" h-[0.1px] opacity-25 w-full bg-black mb-[3vh]"></div>
                   <Link
                     to="/join"
                     onClick={()=>{setmenu(false)}}
                   >
-                    <li className=" mb-2 flex items-center  font-bold ">
+                    <li className=" mb-2 flex items-center ">
                       <PiDotsNineFill className=" mr-4" />
                       PARTNER
                     </li>
                   </Link>
-                  <div className=" h-[0.1px] opacity-25 w-full bg-gray mb-[1vh]"></div>
-                  <div className=" h-[0.1px] opacity-25 w-full bg-gray mb-[1vh]"></div>
+                  <div className=" h-[0.1px] opacity-25 w-full bg-black mb-[1vh]"></div>
+                  
                 </ul>
 
-              <div className=" h-[0.1px] opacity-25 w-full bg-gray mb-[1vh]"></div>
-              <div className="flex w-[40%] justify-between">
+              <div className="flex w-[40%] justify-between mt-10">
                 <Link to="https://twitter.com/Luzeboxlinl">
                   <div className=" hover:text-green cursor-pointer transition-all duration-500">
                     <AiOutlineTwitter size={20} />

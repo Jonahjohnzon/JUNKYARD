@@ -117,7 +117,7 @@ export const words = [
   {words : "  to the sunshine. Challenges and  ", id:4},
   {words : "  difficulties are not meant to  ", id:5},
   {words : "  defeat you, but to promote  ", id:6},
-  {words : "  Jonah Ominyi  ", id:6}
+  {words : "  *Loozebox*  ", id:7}
 ]
 
 export const Hack= {

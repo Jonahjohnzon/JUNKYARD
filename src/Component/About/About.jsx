@@ -13,12 +13,23 @@ const About = () => {
     const [load,setload] = useState(true)
     const [sound, setsound] = useState("off")
     const music = useRef()
+    useEffect(() => {
+        const handleWindowResize = () => {
+          setWindowWidth(window.innerWidth);
+        };
+    
+        window.addEventListener('resize', handleWindowResize);
+    
+        return () => {
+          window.removeEventListener('resize', handleWindowResize);
+        };
+      });
  
     useEffect(()=>{
     setTimeout(()=>{
             setload(false)
             
-    },1000)
+    },3000)
     animateScroll.scrollToTop();
     },[])
     useEffect(()=>{
@@ -41,8 +52,8 @@ const About = () => {
                     <audio ref={music}>
                     <source src='/sound.mp3' type='audio/mp3' />
                 </audio>
-        <Parallax speed={-150}  className=' w-full h-[100vh] bg-silver flex justify-center items-center absolute top-0'>
-            <img src='/Images/0fcc9d.png'/>
+        <Parallax speed={-10}  className=' w-full h-[100vh] bg-silver flex justify-center items-center absolute top-0'>
+            <img src='https://imageupload.io/ib/l3NAtOvorPWT7JQ_1698473639.png'/>
         </Parallax>
         <div className=' relative z-40'>
         <div className=' flex p-10 h-[15vh] w-full justify-between ' >
@@ -60,17 +71,17 @@ const About = () => {
                 <div className=' h-[85vh] w-full flex justify-start items-end px-16 py-10'>
                     <div className=' text-brown animate-pulse text-4xl'><FaAnglesDown/></div>
                 </div>
-                <div className=' lg:h-[100vh] w-full bg-silver flex justify-center items-start'>
-                <div className=' w-[97%] md:w-[80%] h-[1300px] md:h-[1000px] 2xl:h-[750px]  bg-white rounded-lg shadow-lg shadow-blacks relative overflow-hidden'>
-                    <img src='/Images/935c88.webp' className=' w-[400px] absolute right-0 top-0' />
-                    <img src='/Images/7ab6e0.webp' className=" w-[600px] absolute -left-32 bottom-0"/>
+                <div className=' 2xl:h-[100vh] w-full bg-silver flex justify-center items-start'>
+                <div className=' w-[97%] md:w-[80%] h-[1100px] md:h-[1000px] 2xl:h-[750px]  bg-white rounded-lg shadow-lg shadow-blacks relative overflow-hidden'>
+                    <img src='https://imageupload.io/ib/DW71jgEKZ1uMBp9_1698473639.webp' className=' w-[400px] absolute right-0 top-0' />
+                    <img src='https://imageupload.io/ib/eyU6sXcXm4W2yO6_1698473614.webp' className=" w-[600px] absolute -left-32 bottom-0"/>
                     <div className=' w-full h-full flex flex-col   relative justify-center items-center my-12 sm:py-3'>
                    
                         <div className=' font-Anton text-6xl md:text-8xl bg-yellow top-2 sm:top-5  py-7 px-10 text-center mb-10 absolute'>ABOUT US</div>
                         <div className='w-5/6 2xl:w-3/6 md:h-[5/6] bg-white p-3 flex flex-col items-center rounded-lg' >
                             <div className=' font-Anton text-4xl mb-5'><EffectText words="Who We Are"/></div>
-                            <div className=' text-2xl font-bold mb-2'><EffectText words="We are a passionate group of cybersecurity professionals who share a common vision to make Africa a hub of cybersecurity excellence. Our team brings together a wealth of experience in the cybersecurity field and we are committed to driving positive change in the industry. " speed={0.01}/></div>
-                            <div className=' text-2xl font-bold'><EffectText words="         Join us in this exciting journey! You can become a part of our thriving community by participating in discussions, sharing your expertise, attending events, or even volunteering. Together, we can make a real impact on the African cybersecurity landscape." speed={0.01} delay={3}/></div>
+                            <div className=' sm:text-2xl  font-bold mb-2'><EffectText words="We are a passionate group of cybersecurity professionals who share a common vision to make Africa a hub of cybersecurity excellence. Our team brings together a wealth of experience in the cybersecurity field and we are committed to driving positive change in the industry. " speed={0.01}/></div>
+                            <div className=' sm:text-2xl font-bold'><EffectText words="         Join us in this exciting journey! You can become a part of our thriving community by participating in discussions, sharing your expertise, attending events, or even volunteering. Together, we can make a real impact on the African cybersecurity landscape." speed={0.01} delay={3}/></div>
                      
                     </div>
                     </div>

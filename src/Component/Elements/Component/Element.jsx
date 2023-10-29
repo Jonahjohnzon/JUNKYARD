@@ -112,11 +112,11 @@ export const Detail = [
 
 export const words = [
   {words : "  Life is a journey that must be traveled no matter  ", id:1},
-  {words : "  how bad the roads and accommodations  ", id:2},
-  {words : "  you have to go through the rain to get  ", id:3},
-  {words : "  to the sunshine. Challenges and  ", id:4},
-  {words : "  difficulties are not meant to  ", id:5},
-  {words : "  defeat you, but to promote  ", id:6},
+  {words : "  how bad the road is or gets. you have to go   ", id:2},
+  {words : "  through the rain to get to the sunshine. ", id:3},
+  {words : "  Remember challenges and difficulties  ", id:4},
+  {words : "  are not meant to defeat you, ", id:5},
+  {words : "  but to promote  ", id:6},
   {words : "  *Loozebox*  ", id:7}
 ]
 

@@ -30,7 +30,7 @@ const Last = () => {
   return (
     <div className="w-full h-full relative overflow-hidden" id="discord">
       <Parallax speed={(windowWidth > 1060)?40:0} className="w-full absolute bottom-0  z-0"><img
-        src="https://imageupload.io/ib/VXLy7FeWHG8SHXb_1698473701.png"
+        src="/Images/pngegg.png"
         className="  "
       /></Parallax>
       <div className=" w-full  h-full flex justify-center items-center relative">

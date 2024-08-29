@@ -53,7 +53,7 @@ const About = () => {
                     <source src='/sound.mp3' type='audio/mp3' />
                 </audio>
         <Parallax speed={-10}  className=' w-full h-[100vh] bg-silver flex justify-center items-center absolute top-0'>
-            <img src='https://imageupload.io/ib/l3NAtOvorPWT7JQ_1698473639.png'/>
+            <img src='/Images/bg.png'/>
         </Parallax>
         <div className=' relative z-40'>
         <div className=' flex p-10 h-[15vh] w-full justify-between ' >
